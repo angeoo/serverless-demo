@@ -8,10 +8,10 @@ provider "aws" {
   skip_requesting_account_id  = true
 
   endpoints {
-    lambda     = "http://ip10-0-7-4-cvi159ib9qb14bivkpt0-4566.direct.lab-boris.fr"
-    apigateway = "http://ip10-0-7-4-cvi159ib9qb14bivkpt0-4566.direct.lab-boris.fr"
-    iam        = "http://ip10-0-7-4-cvi159ib9qb14bivkpt0-4566.direct.lab-boris.fr"
-    dynamodb   = "http://ip10-0-7-4-cvi159ib9qb14bivkpt0-4566.direct.lab-boris.fr"
+    lambda     = "http://ip10-0-76-4-d34h3nvtq0k1c7cornug-4566.direct.lab-boris.fr"
+    apigateway = "http://ip10-0-76-4-d34h3nvtq0k1c7cornug-4566.direct.lab-boris.fr"
+    iam        = "http://ip10-0-76-4-d34h3nvtq0k1c7cornug-4566.direct.lab-boris.fr"
+    dynamodb   = "http://ip10-0-76-4-d34h3nvtq0k1c7cornug-4566.direct.lab-boris.fr"
   }
 }
 
@@ -153,3 +153,4 @@ resource "aws_lambda_permission" "allow_apigw_contact" {
   principal     = "apigateway.amazonaws.com"
   source_arn    = "${aws_api_gateway_rest_api.api.execution_arn}/*/*/contact"
 }
+
